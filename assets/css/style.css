@@ -1,0 +1,31 @@
+.jumbotron {
+	text-align: center;
+	background-color: blue;
+	padding: 10px;
+	color: white;
+	margin: 5px;
+
+}
+
+.btn  {
+	background-color: blue;
+	padding: 5px;
+	color: white;
+	border: none;
+	vertical-align: middle;
+	text-align: center;
+	font-size:12px;
+	margin: 5px;
+	
+}
+
+
+#gifs {
+	float:left;
+}
+
+#style {
+	float: right;
+	margin-top: 90px;
+	padding: 20px;
+}
