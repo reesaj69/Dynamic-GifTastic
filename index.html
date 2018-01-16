@@ -5,61 +5,57 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>GifTastic</title>
+        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
        
     </head>
     <body>
+<div class = "container">
+        <!--Jumbotron-->
+        <div class="jumbotron">
+            <h1>Welcome to GifTastic Entertainment!</h1>
+            <p>Basketball Players</p>
+        </div> 
+        <!--End of Jumbotron -->
+        
+        <br>
+        
+        <!--Row containing the Gifs and the basketball players buttons -->
+        <div class = "row" id="buttonPanel">
+        </div> 
+        <!--End row with basketball players buttons -->
 
-		<div class="jumbotron jumbotron-fluid">
-  			<div class="container">
-    		<h1 class="display-4">Welcome to GifTastic</h1>
-  			  <p class="lead">Basketball Players</p>
-  			</div>
-		</div>
-
-
-
-
-
-
-    	<div class="container">
-    		<div id="basketballPlayersButton">
-    			<button class="btn btn-info basketballPlayer" data-name="MichaelJordan">Michael Jordan</button>
-    			<button class="btn btn-info basketballPlayer" data-name="MagicJohnson">Magic Johnson</button>
-    			<button class="btn btn-info basketballPlayer" data-name="LeBronJames">Lebron James</button>
-    			<button class="btn btn-info basketballPlayer" data-name="StephenCurry">Stephen Curry</button>
-    			<button class="btn btn-info basketballPlayer" data-name="KyrieIrving">Kyrie Irving</button>
-    			
-			</div>
-		</div>
+        
+        <!--Row containing the Gifs and the user form -->
+        <div class = "row">
 
 
-		<div id="gifs">
-		</div>
+        <!--Left panel containing the Gif's -->
+        <div class="col-lg-10" id="gifPanel">
+        </div>
+        <!--End of left panel containing the Gifs -->
 
-		<div id="style">
-			<h4> Add a Basketball Player</h4>
-				<form id="gif-form">
-					<label for="gif-input"></label>
-					<input type="text" value="" id="gif-input"><br><br>
+        <!--Right panel containing the user form -->
+        <div class = "col-lg-2 formPanel">
+            <form id="basketball-player-form">
+                <label for="basketball-input" class="inputLabel">Add a Basketball Player</label>
+                <input type="text" id="basketball-input"><br>
 
-					<input type="submit" name="Button" class="btn btn-success" id="theButton">
-				</form>
-		</div>
+                <!-- Button triggers a new basketball player to be added -->
+                <input id="add-basketballPlayer" type="submit" value="Submit">
+            </form>
+        </div>
+        <!--End right panel containing the user form-->
+        
+        </div>
+        <!--End row with Gifs and user form -->
 
-	
 
 
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="assets/javascript/gif.js"></script>
- </body>
-
+</body>
 </html>
-
-<!--Psuedo Code
-		I have to finish the code for the add a basketball player to the list of basketball players.
-
-		I have to figure out out the code to click on a gif picture and stop it from animating.
--->
-
